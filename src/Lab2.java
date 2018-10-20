@@ -94,10 +94,11 @@ public class Lab2 {
                 String.format("%15.5f",MathUnit.koif[4][2])+
                 "\n";
         out+=space;
-        double min =200000;
+        Double min =200000.;
         int imin=0;
         for (int i=0;i<MathUnit.sigm.size();i++) {
                 if(MathUnit.sigm.get(i)<min){
+                    min=MathUnit.sigm.get(i);
                     imin=i;
                 }
         }
